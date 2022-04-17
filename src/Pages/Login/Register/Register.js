@@ -46,13 +46,13 @@ const Register = () => {
                 <input type="password" name="password" id="" placeholder='Enter your password' />
 
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                {/* <label className={agree ? 'ps-2 text-primary' : 'ps-2 text-danger'} htmlFor="terms">Accept genius car terms and condition</label> */}
-                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept genius car terms and condition</label>
+
+                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Science Tutor terms and conditions</label>
                 <input
-                    disabled={agree}
+                    disabled={!agree}
                     className="btn btn-info" type="submit" value="Register" />
             </form>
-            <p>New to Genius Car? <Link to='/register' className='text-danger text-decoration-none' onClick={navigateLogin}>Please Register</Link></p>
+            <p>Already student? <Link to='/login' className='text-danger text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
             <SocialLogin></SocialLogin>
         </div>
     );
