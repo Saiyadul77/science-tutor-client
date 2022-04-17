@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import science1 from '../../../images/banner/science1.jpg';
-import science2 from '../../../images/banner/science2.jpg';
-import science3 from '../../../images/banner/science3.jpg';
+import science1 from '../../../images/banner/Math.jpg';
+import science2 from '../../../images/banner/physics.png';
+import science3 from '../../../images/banner/chemistry.jpg';
 
 const Banner = () => {
     return (
@@ -15,8 +15,9 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <br />
+                        <h3 className='text-success'>Mathematics</h3>
+                        <p className='text-dark fw-bold'>Pure mathematics is the world's best game.....</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -27,8 +28,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 className='text-white'>Physics Instruments</h3>
+                        <p className='text-primary fw-bold'>“Energy is liberated matter, matter is energy waiting to happen.” ... </p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -39,8 +40,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3 className='text-success'>Chemistry Instruments and Chemical</h3>
+                        <p className='text-white fw-bold'>"Every man who receives a liberal education now counts chemistry among the most indispensable objects of his studies."    </p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

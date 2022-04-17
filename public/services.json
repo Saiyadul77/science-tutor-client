@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Special Batch for JSC",
+        "price": "10000",
+        "description": "Physically or Online class, Total class about 100-120, Total Exam about 100-120, Chapter wise exam-60 and Subject final exam 7.",
+        "img": "https://i.ibb.co/ncfRbNg/jsc1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Special Batch for SSC",
+        "price": "15000",
+        "description": "Physically or Online class, Total class about 120-150, Total Exam about 100-120, Chapter wise exam-80 and Subject final exam 12.",
+        "img": "https://i.ibb.co/WFc0DhB/hsc.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Special Batch for HSC",
+        "price": "20000",
+        "description": "Physically or Online class, Total class about 120-150, Total Exam about 100-120, Chapter wise exam-60 and Subject final exam 7.",
+        "img": "https://i.ibb.co/LzVnhCY/ssc.gif"
+    }
+]
