@@ -4,7 +4,7 @@ import './Register.css'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { Form } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 
 const Register = () => {
     const [agree, setAgree] = useState(false)
@@ -41,16 +41,27 @@ const Register = () => {
         <div className='register-form'>
             <h2 className='text-primary text-center my-3' >Please register</h2>
             <form onSubmit={handleUserRegister}>
-                <input type="text" name="name" id="" placeholder='Your Full Name' required />
-                <input type="email" name="email" id="" placeholder='Enter your email' required />
-                <input type="password" name="password" id="" placeholder='Enter your password' />
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Your Full Name</Form.Label>
+                    <Form.Control type="text" name='name' placeholder="Enter Your Name" required />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" name='email' placeholder="Enter email" required />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control type="password" name='password' placeholder="Password" required />
+                </Form.Group>
 
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
 
                 <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Science Tutor terms and conditions</label>
+
                 <input
                     disabled={!agree}
-                    className="btn btn-info" type="submit" value="Register" />
+                    className="btn btn-info mt-2" type="submit" value="Register" />
             </form>
             <p>Already student? <Link to='/login' className='text-danger text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
             <SocialLogin></SocialLogin>
